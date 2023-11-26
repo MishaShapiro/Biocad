@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Nunito&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Analytics Page</title>
+</head>
+<body>
+    <header class="header">
+        <div class="icon">
+            <img src="images/new_logo.svg" alt="">
+        </div>
+        <nav class="nav">
+            <ul class="mainlinks">
+                <li class="mainlink"><a href="./main.html">Главная</a></li>
+                <li class="mainlink mainlink_active"><a href="./analytics.html">Аналитика</a></li>
+            </ul>
+        </nav>
+        <div class="userIcon">  
+            <img src="images/user.png" alt="">
+        </div>
+    </header>
+    <main class="analytics__main">
+        <div class="analytics__container">
+            <div class="analytics__head">
+                <img class="analytics__img" src="images/unknown device.png" alt="">
+                <div class="analytics__text">
+                    <p class="analytics__textName">pH-метр Mettler-Toledo International, Inc. SevenCompact S220</p>
+                    <p class="analytics__textIndex">S1.4.I14-9.001 • 00-024004</p>
+                </div>
+
+                <div class="analytics__vidjets">
+                    <select name="status" class="analytics-status-select">
+                        <option value="В работе">В работе</option>
+                        <option value="Сделан">Сделан</option>
+                        <option value="Отменён">Отменён</option>
+                    </select>
+                    <img src="images/favorite.svg" alt="">
+                    <img src="images/settings.svg" alt="">
+                </div>
+            </div>
+            <div class="analitycs__buttons">
+                <select name="status" class="apparat-work-section">
+                    <option value="Работа прибора">Работа прибора</option>
+                    <option value="Другой параметр">Другой параметр</option>
+                </select>
+                <div class="analitycs__btns">
+                    <button class="analitycs__btns_clock"><img style = "position: relative; top: 4px;" src="images/btnClock.svg" alt=""></button>
+                    <button class="analitycs__btns_download"><p>Сохранить в PDF</p><img src="/images/Divider_vertical.svg" alt=""><img src="images/Points.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="analitycs__calendar">
+                <input class="analitycs__input" type="date" value="2021-07-10" max="2021-10-21">
+                <span>➔</span>
+                <input class="analitycs__input" type="date" value="2021-10-21" min="2021-07-10">
+            </div>
+            <div class="analitycs__dateButtons">
+                <button class="analitycs__dateButton">День</button>
+                <button class="analitycs__dateButton">Неделя</button>
+                <button class="analitycs__dateButton analitycs__dateButton_active">2 недели</button>
+                <button class="analitycs__dateButton">Месяц</button>
+                <button class="analitycs__dateButton">3 месяца</button>
+                <button class="analitycs__dateButton">Полгода</button>
+            </div>
+            <div class="analitycs__table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Начало</th>
+                            <th>Тип работ</th>
+                            <th>Работы</th>
+                            <th>Результат</th>
+                            <th>Пользователь</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09.10.2021, 15:46</td>
+                            <td>
+                                <p class="type_of_work">В работе</p>
+                                <p>Измерение</p>
+                            </td>
+                            <td>Образец/серия: 000100057935_170000010325_0000251849</td>
+                            <td class="analytics__result"></td>
+                            <td><span class="analytics__user">morozovava</span></td>
+                        </tr>
+                        <tr>
+                            <td>12.10.2021, 12:17</td>
+                            <td>
+                                <p class="type_of_work">В работе</p>
+                                <p>Калибровка</p>
+                            </td>
+                            <td>
+                                <p><strong>Номер колонки: </strong>Колонка 2</p>
+                                <p><strong>Образец: </strong>Образец 2</p>
+                                <p><strong>Образец: </strong>образец 1</p>
+                                <p><strong>Метод: </strong>метов тестовый</p>
+                                <p><strong>Номер колонки: </strong>Колонка 1</p>
+                            </td>
+                            <td class="analytics__result">Промывка с указанием вещества: Вещество
+                                Комментарий: тест успешности</td>
+                                <td><span class="analytics__user">morozovava</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
